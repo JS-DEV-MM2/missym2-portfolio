@@ -1,0 +1,62 @@
+
+.card {
+  border-radius: 5px;
+  border: 1px solid var(--background-color-dark);
+  background-color: var(--background-color-light);
+  display:inline-block;
+
+  &__image-container {
+    text-align:center;
+    padding:10px;
+  }
+
+  &__image{
+    height: 15em;
+    max-width: 100%;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+  }
+
+  &__info &__title &__type {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    padding: 20px;
+  }
+
+  &__detail-section {
+    border: 1px solid pink;
+  }
+
+  &__detail-list-container {
+    display:inline-block;
+    width: 100%;
+    border: 1px solid;
+  }
+
+  &__detail-list-btn {
+    border: 1px solid orange;
+    background-color:lightgrey;
+    text-align:center;
+    padding: 10px;
+  }
+
+  &__item {
+    margin:0 0 8px 30px;
+    
+  }
+
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1200px) {
+
+
+}

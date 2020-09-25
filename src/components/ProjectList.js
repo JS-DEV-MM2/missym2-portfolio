@@ -12,19 +12,11 @@ const ProjectList = () => {
                     <h2>Projects</h2>
                     {
                         projects.length ? (
-                            <div className="projects-grid-container">
+                            <div className="projects__grid-container">
                                 {
                                     projects.map(( project, i ) => {
                                         return (
-                                            <ProjectCard
-                                              key={i}
-                                              title={project.title}
-                                              type={project.type}
-                                              image={project.image}
-                                              overview={project.overview}
-                                              reports={project.reports}
-                                              artifacts={project.artifacts}
-                                              id={project.id} />
+                                            <ProjectCard key={i} {...project} />
                                         );
                                     })
                                 }

@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
  :root{
-    --darkest-color: #3C3C3C;
-    --background-color:#F2F3FC;
-    --background-color-contrast: #DEE0EE;
-    --body-text: #150359;
+    --background-color-dark: #BFC5D9;
+    --background-color-light: #F2F3FC;
+    --app-white: #ffffff; 
+    --app-very-dark: #150359;
+    --app-alt-dark: #364FD9;
+    --strong-highlight: #D93A2B;
+
+
     --text-highlight:#D63F29;
     --highlight-2: #9BF4DC;
     --highlight-3:#3745E4;
     --light-accent: #AF473C;
     --dark-accent: #AD6C71;
-    --white: #ffffff; 
 }
 
 

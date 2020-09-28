@@ -10,9 +10,9 @@ const Hero = () => {
       <div className="hero hero__container">
         <div className="hero__content">
           <p>
-            I'm Missy Maloney, a <bold className="hero__em">Web Developer and UX/UI Designer</bold> based in
+            I'm Missy Maloney, a <span className="hero__em">Web Developer and UX/UI Designer</span> based in
             Rockville, Maryland. I love to watch ideas come to life with digital
-            tools. It's truly <bold className="hero__em-plus">magic</bold>.
+            tools. It's truly <span className="hero__em-plus">magic</span>.
           </p>
         </div>
         <div className="hero__image-container">

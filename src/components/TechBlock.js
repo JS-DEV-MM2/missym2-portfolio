@@ -5,14 +5,10 @@ import "../styles/TechBlock.scss";
 
 const TechBlock = props => {
 
-    const tech = props.techitems.map((item, i) => {
+    const tech = props.techitems.map( item => {
             return (
-              <div className="tech__container">
-                <img
-                  className="tech__item"
-                  src={item.link}
-                  alt={item.name}
-                />
+              <div className="tech__container" key={item.name}>
+                <img className="tech__item" src={item.link} alt={item.name} />
               </div>
             );
     });

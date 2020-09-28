@@ -15,7 +15,7 @@ const ReportDetail = props => {
       <div className="card__detail-section">
               {props.reports.length ? (
                 <div className="card__detail-list-container">
-                  <div className="card__detail-list-btn" onClick={showHideItemList}>{props.title}</div>
+                  <div className="btn-light" onClick={showHideItemList}>{props.title}</div>
                     <div>
                         {itemlistvisible ? (
                           <ul>

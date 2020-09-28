@@ -1,0 +1,55 @@
+
+.itemlist {
+    &__container {
+        width:100%;
+        margin: 0 auto;
+    }
+
+    &__item {
+    margin:0 0 8px 30px;
+    
+  }
+}
+
+.artifact__container {
+    margin: 25px;
+    padding: 15px;
+    border-radius: 5px;
+    background: var(--app-white);
+    box-shadow: -15px -15px 15pc rgba(255, 255, 255, 0.5),
+            15px 15px 15pc rgba(0, 0, 0, 0.05),
+            inset 4px 4px 5px rgba(255, 255, 255, 0.8),
+            inset -4px -4px 5px rgba(0,0,0,0.05),
+            0 50px 40px rgba(0,0,0,0.05);
+        
+
+}
+
+@media (min-width: 576px) {
+     .itemlist {
+    /* 
+        &__container {
+            width:50%;
+        } */
+    }
+}
+
+@media (min-width: 768px) {
+    .itemlist {
+    
+        &__container {
+           /*  width:750%; */
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .itemlist {
+    
+       /*  &__container {
+            width:90%;
+        } */
+    }
+
+
+}

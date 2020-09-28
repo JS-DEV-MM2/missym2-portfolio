@@ -5,11 +5,9 @@ import ProjectCard from './ProjectCard';
 const ProjectList = () => {
     const { projects } = useContext(ProjectViewerContext);
 
-    console.log('inside ProjectList, projects', projects);
     return (
-            <div className="projects">
-                <div className="container">
-                    <h2>Projects</h2>
+         <div className="projects">
+               <div className="container">
                     {
                         projects.length ? (
                             <div className="projects__grid-container">
@@ -25,7 +23,7 @@ const ProjectList = () => {
                             <div>No projects can be found.</div>
                         )
                     } 
-                </div>
+                </div> 
             </div>
     );
 }

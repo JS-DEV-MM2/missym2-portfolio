@@ -13,9 +13,6 @@ const TechBlock = props => {
                   src={item.link}
                   alt={item.name}
                 />
-                <div className="tech__item-name">
-                    {item.name}
-                </div>
               </div>
             );
     });

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import "../styles/ProjectCard.scss";
+import "../styles/ItemList.scss";
 
 
 const ItemList = props => {
@@ -12,7 +12,7 @@ const ItemList = props => {
 
   const artifacts = props.itemlist.map((item, i) => {
                             return (
-                              <li key={item.id} className="card__item">
+                              <li key={item.id} className="itemlist__item">
                                 <a 
                                   href={item.artifactLink} 
                                   target="_blank"
@@ -25,21 +25,21 @@ const ItemList = props => {
                           })
 
   return (
-      <div className="card__detail-section">
-            <div className="card__detail-list-container">
-                <div className="card__detail-list-btn" onClick={showHideItemList}>{props.title}</div>
-                <div>
-                    {itemlistvisible ? (
-                        <ul>
-                        {artifacts}
-                    </ul>
-                    ) : (
-                        <div></div>
-                    )} 
-                </div>
-            </div>
-       </div>
-    );
+    <div className="itemlist">
+      <div className="itemlist__container">
+        <div className="btn__container">
+          <button
+            type="button"
+            className="btn btn__light-wide"
+            onClick={showHideItemList}
+          >
+            {props.title}
+          </button>
+        </div>
+        <div>{itemlistvisible && <ul className="artifact__container">{artifacts}</ul>}</div>
+      </div>
+    </div>
+  );
   }
 
   export default ItemList;

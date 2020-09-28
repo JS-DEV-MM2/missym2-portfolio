@@ -12,6 +12,7 @@ const ProjectViewerProvider = ({ children }) => {
         imageAlt: "Executive Followup",
         type: "Design/Development",
         title: "Executive FollowUp",
+        style: "peach",
         tech: [
           {
             name: "HTML5",
@@ -196,6 +197,7 @@ const ProjectViewerProvider = ({ children }) => {
         imageAlt: "shopYourCloset",
         type: "Design/Development",
         title: "shopYourCloset",
+        style: "lavender",
         tech: [
           {
             name: "HTML5",
@@ -245,6 +247,7 @@ const ProjectViewerProvider = ({ children }) => {
         imageAlt: "getTheBook",
         type: "Design/Development",
         title: "getTheBook",
+        style: "yellow",
         tech: [
           {
             name: "HTML5",
@@ -285,6 +288,7 @@ const ProjectViewerProvider = ({ children }) => {
         imageAlt: "Dinner's On",
         type: "Design",
         title: "Dinner's On",
+        style: "green",
         tech: [
           {
             name: "Balsamiq",
@@ -293,10 +297,14 @@ const ProjectViewerProvider = ({ children }) => {
           {
             name: "Figma",
             link: require("../images/figma-ar21.svg"),
-          }
+          },
         ],
-        overview: "adfasdfasdfasdf",
-        content: "asdfasdfasdf",
+        overview:
+          "Dinner's On delivers nutritious dinners to busy families with limited time for cooking.",
+        content:
+          "In this online ordering system, a user navigates through a progressive process, choosing items " +
+          "from several meal categories.  The user, ultimately, inputs details for the delivery and payment.  " +
+          "This application also incorporates the ability to become a recurring user.",
         reports: [
           {
             id: 123,

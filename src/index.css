@@ -1,32 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
+
 
  :root{
     --background-color-dark: #BFC5D9;
     --background-color-light: #F2F3FC;
     --app-white: #ffffff; 
     --app-very-dark: #150359;
-    --app-alt-dark: #364FD9;
-    --strong-highlight: #D93A2B;
+    --title-dark: #D93A2B;
+    --sub-title-dark: #364FD9;
+    --body-html-default-text: #292a2c;
+    --borders-hover:green;
 
 
-    --text-highlight:#D63F29;
+    --text-highlight:#E82678;
+    --text-highlight-darker: #B617A1;
     --highlight-2: #9BF4DC;
     --highlight-3:#3745E4;
     --light-accent: #AF473C;
     --dark-accent: #AD6C71;
+    --highlight-10: #DDEEFE;
+    --highlight-11: #F9F7C7;
+    --highlight-12: #D9F6F1;
+    --highlight-13: #E6EDFF;
+    --highlight-14: #FFE9E2;
+    --highlight-15: #E6DBEB;
+
+    
+
+
 }
 
-
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin-top: 0px!important;
+}
+
+body, html {
+  font-size: 18px;
+  line-height: 1.66667;
   font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--white);
-  color: var(--body-text);
+}
+
+body, html, pre {
+   color: var(--body-html-default-text);
+   word-wrap: break-word;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  text-decoration: none;
+  color: var(--body-html-default-text);
+
+  
+}
+
+a:hover {
+  color: var(--text-highlight);
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+h4 {
+  color: var( --sub-title-dark);
 }

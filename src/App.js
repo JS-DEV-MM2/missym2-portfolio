@@ -1,6 +1,7 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import Home from './pages/Home';
+import About from './pages/About';
 /* import Project from './pages/Project'; */
 import ProjectViewerProvider from './context/ProjectViewerContext';
 import './App.scss';
@@ -11,16 +12,16 @@ function App() {
     <ProjectViewerProvider>
       <div className="App">
         <Router>
-          <Navbar />
+          <NavBar />
           <Switch>
-            <Route path='/' exact component={Home}/>
+            <Route path='/' exact component={Home} />
+            <Route path='/about' component={About} />
            {/*  <Route path='/:projectId' exact component={Project} /> */}
           </Switch>
         </Router>
-        
       </div>
     </ProjectViewerProvider>
-    
+
   );
 }
 

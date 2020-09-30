@@ -22,23 +22,8 @@
      align-content:center;
   }
 
-  &__color-block {
-    background: rgb(181,26,160);
-    background: linear-gradient(90deg, rgba(181,26,160,1) 9%, rgba(232,37,120,1) 46%, rgba(181,26,160,1) 100%);
-    border-radius: 5px;
-    margin:0 auto;
-    height: 10em;
-    width: 10em;
-  }
-
   &__image {
-    margin-left: .5em;
-    margin-top:.5em;
-    margin-right: -.5em;
     height: 10em;
-    width: 10em;
-    border-radius:5px;
-    filter: grayscale(100%);
   }
 
   &__em {

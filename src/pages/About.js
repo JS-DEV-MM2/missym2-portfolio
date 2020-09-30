@@ -1,6 +1,6 @@
 import React from 'react';
 
-import aboutImg from "../images/DSC_0364.jpg";
+import aboutImg from "../images/missy__img.png";
 
 import '../styles/About.scss';
 
@@ -10,7 +10,9 @@ const About = () => {
     return (
       <div className="about__container">
         <div className="about__image-container">
-          <img src={aboutImg} className="about__image" alt="family" />
+          <div className="about__color-block">
+            <img src={aboutImg} className="about__image" alt="family" />
+          </div>
         </div>
         <div className="about__content">
           <p>
@@ -22,9 +24,11 @@ const About = () => {
           <p>
             I am currently working as a Software Engineer at raft, LLC. There, I
             work on an agile team to develop digital applications to replace
-            paper-based financial education tools. We have followed <em className="highlight">mobile-first</em> and <em className="highlight">progressive web</em> methodologies.
+            paper-based financial education tools. We have followed{" "}
+            <em className="highlight">mobile-first</em> and{" "}
+            <em className="highlight">progressive web</em> methodologies.
             Critical to our success is our user-centered approach, taking
-            advantage of such techniques as the development of 
+            advantage of such techniques as the development of
             <em className="highlight">user personas</em>,{" "}
             <em className="highlight">wireframes</em>, and{" "}
             <em className="highlight">full-color clickable mockups</em>.

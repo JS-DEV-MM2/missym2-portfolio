@@ -1,34 +1,72 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import "../styles/MenuNav.scss";
 
 const MenuNav = () => {
+  const dropdownRef = useRef(null);
     const [isWideWidth, setWideWidth] = useState(window.innerWidth < 800);
+    const [isActive, setIsActive] = useState(false);
+
+     useEffect(() => {
+       window.addEventListener("resize", updateMenu);
+       return () => window.removeEventListener("resize", updateMenu);
+     });
 
     const updateMenu = () => {
-        console.log('made it to update Menu');
         setWideWidth(window.innerWidth < 800);
     }
 
-    useEffect(() => {
-        window.addEventListener("resize", updateMenu);
-        return () => window.removeEventListener("resize", updateMenu);
-    });
+   
+
+    const onClick = () => {
+      setIsActive(!isActive);
+    }
+
+
 
   return (
     <div className="menu">
       {isWideWidth ? (
-        <div className="menu__hamburger-container">
-          <span className="menu__hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-          <span className="text">Menu</span>
+        <div>
+          <div onClick={onClick} className="menu__hamburger-container">
+            <span className="menu__hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <nav
+            ref={dropdownRef}
+            className={`menu ${
+              isActive ? "active" : "inactive"
+            }`}
+          >
+            <ul>
+              <li>
+                <Link to="/" className="menu__item">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="menu__item">
+                  About
+                </Link>
+              </li>
+              <li>
+                <a href="mailto:missymaloney1@gmail.com" className="menu__item">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       ) : (
-        <div className="menu__list-container">
+        <div></div>
+        
+      )}
+
+     {/*  <div className="menu__list-container">
           <div>
             <Link to="/" className="menu__item">
               Home
@@ -44,8 +82,7 @@ const MenuNav = () => {
               Contact
             </a>
           </div>
-        </div>
-      )}
+        </div> */}
 
       <div className="fly-in--nav--social">
         <a href="https://www.facebook.com/" title="Facebook Link">

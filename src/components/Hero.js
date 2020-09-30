@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../styles/Hero.scss';
 
-import missyImg from '../images/missy__img.png';
+import homeImg from "../images/programmer_at_desk.png";
 
 const Hero = () => {
 
@@ -16,9 +16,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="hero__image-container">
-          <div className="hero__color-block">
-            <img className="hero__image" src={missyImg} alt="Missy Maloney" />
-          </div>
+            <img className="hero__image" src={homeImg} alt="Missy Maloney" />
         </div>
       </div>
     );

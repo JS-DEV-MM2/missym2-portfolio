@@ -5,9 +5,32 @@
         margin: 1em;   
     }
 
+    &__image-container {
+        display:flex;
+        align-content:center;
+    }
+
+    &__color-block {
+        background: rgb(181,26,160);
+        background: linear-gradient(90deg, rgba(181,26,160,1) 9%, rgba(232,37,120,1) 46%, rgba(181,26,160,1) 100%);
+        border-radius: 5px;
+        margin:0 auto;
+        height: 8em;
+        width: 8em;
+    }
+
     &__image {
-        width: 100%;
-        border: 3px solid var(--text-highlight-darker);
+        margin-left: .5em;
+        margin-top:.5em;
+        margin-right: -.5em;
+        height: 8em;
+        width: 8em;
+        border-radius:5px;
+        filter: grayscale(100%);
+    }
+
+    &__content {
+        margin-top: 3em;
     }
 }
 
@@ -26,13 +49,24 @@ p {
 }
 
 
+
+
 @media (min-width: 576px) {
     .about {
         &__container {
             margin: 0;
             padding: 0;
             margin: 2em auto;
+        }
 
+        &__color-block {
+            height: 10em;
+            width: 10em;
+        }
+
+         &__image {
+            height: 10em;
+            width: 10em;
         }
     }
 

@@ -8,9 +8,11 @@ const ProjectViewerProvider = ({ children }) => {
     const [projects] = useState([
       {
         id: 1,
-        image: require("../images/efu.png"),
+        image: require("../images/programmer_at_desk.png"),
         imageAlt: "Executive Followup",
         type: "Design/Development",
+        project: "https://nameless-inlet-97185.herokuapp.com/",
+        github: "https://github.com/MissyM2/efu-client",
         title: "Executive FollowUp",
         style: "peach",
         tech: [
@@ -193,9 +195,11 @@ const ProjectViewerProvider = ({ children }) => {
       },
       {
         id: 2,
-        image: require("../images/syc.png"),
+        image: require("../images/syc.svg"),
         imageAlt: "shopYourCloset",
         type: "Design/Development",
+        project: "https://serene-dawn-65763.herokuapp.com/",
+        github: "https://github.com/MissyM2/shopYourCloset",
         title: "shopYourCloset",
         style: "lavender",
         tech: [
@@ -243,9 +247,11 @@ const ProjectViewerProvider = ({ children }) => {
       },
       {
         id: 3,
-        image: require("../images/gtb.png"),
+        image: require("../images/gtb.svg"),
         imageAlt: "getTheBook",
         type: "Design/Development",
+        project: "https://missym2.github.io/getTheBook/",
+        github: "https://github.com/MissyM2/getTheBookFinal",
         title: "getTheBook",
         style: "yellow",
         tech: [

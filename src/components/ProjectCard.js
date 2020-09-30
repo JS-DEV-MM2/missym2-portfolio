@@ -7,8 +7,6 @@ import "../styles/ProjectCard.scss";
 
 
 const ProjectCard = props => {
-
-
     return (
       <div className={`card ${props.style}`}>
         <div className="card__title">
@@ -19,35 +17,33 @@ const ProjectCard = props => {
           <p>{props.overview}</p>
         </div>
         <div className="card__info">
-          <div className="btn__container">
-            <a
-              className="card__links-action"
-              href="https://github.com/MissyM2/efu-client"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button type="button" className="btn btn__light">
-                View code
-              </button>
-            </a>
-            <a
-              className="card__links-action"
-              href="https://nameless-inlet-97185.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button type="button" className="btn btn__dark">
-                View project
-              </button>
-            </a>
-          </div>
-          <div className="card__image-container">
-            <img
-              className="card__image"
-              src={props.image}
-              alt={props.imageAlt}
-            />
-          </div>
+          {props.title === "Dinner's On" ? (
+            <div></div>
+          ) : (
+            <div className="btn__container">
+              <a
+                className="card__links-action"
+                href={props.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button type="button" className="btn btn__light">
+                  View code
+                </button>
+              </a>
+              <a
+                className="card__links-action"
+                href={props.project}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button type="button" className="btn btn__dark">
+                  View project
+                </button>
+              </a>
+            </div>
+          )}
+
           <TechBlock techitems={props.tech} key={props.id} />
           <div className="card__content">
             <p>{props.content}</p>
@@ -70,6 +66,13 @@ const ProjectCard = props => {
               />
             )}
           </div>
+        </div>
+        <div className="card__image-container">
+          <img
+            className='card__image'
+            src={props.image}
+            alt={props.imageAlt}
+          />
         </div>
       </div>
     );

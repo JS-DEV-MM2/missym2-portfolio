@@ -17,10 +17,13 @@ const NavBar = () => {
 
   const updateMenu = () => {
       setWideWidth(window.innerWidth < 768);
+      if (window.innerWidth >= 768) {
+        setIsActive(false);
+        document.body.style.overflow = "unset";
+      }
   }
 
  const onClick = () => {
-   console.log('made it to isWideWidth, isActive', isWideWidth, isActive);
     setIsActive(!isActive);
     if (!isActive) {
       document.body.style.overflow = 'hidden';

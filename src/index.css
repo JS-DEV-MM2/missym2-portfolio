@@ -84,7 +84,8 @@ a:hover {
 }
 
 p {
-  padding-bottom: 10px;
+    font-size: .8em;
+    margin-bottom: 1em;
 }
 
 h1, h2, h3 {

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import aboutImg from "../images/missy__img.png";
+import myResume from "../artifacts/missymaloneyresume10012020.pdf";
 
 import '../styles/About.scss';
 
@@ -14,6 +15,14 @@ const About = () => {
             <img src={aboutImg} className="about__image" alt="family" />
           </div>
         </div>
+        <div className="about__resume-btn">
+          <a href={myResume} target="_blank" rel="noopener noreferrer">
+            <button type="button" className="btn btn__light">
+              View my resume
+            </button>
+          </a>
+        </div>
+
         <div className="about__content">
           <p>
             People might describe me as a marketing or art person but I

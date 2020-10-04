@@ -8,7 +8,7 @@ const ProjectViewerProvider = ({ children }) => {
     const [projects] = useState([
       {
         id: 1,
-        image: require("../images/programmer_at_desk.png"),
+        image: require("../images/efu__image.png"),
         imageAlt: "Executive Followup",
         type: "Design/Development",
         project: "https://nameless-inlet-97185.herokuapp.com/",
@@ -42,10 +42,11 @@ const ProjectViewerProvider = ({ children }) => {
           },
         ],
         overview:
-          "Executive FollowUp is a tool to be used by students in upper middle school through college to monitor academic performance.",
+          "Executive FollowUp gives students a way to monitor academic success and plan their work.",
         content:
-          "At a glance, a student can see what is due today or this week, as well as, how much study time is needed. The " +
-          "student can keep track of grades and help determine future course selections.",
+          "A student adds assignments and makes a concrete plan of action to get their assignments completed.  " +
+          "From their dashboard, a student can see what is due today or this week, as well as, how much study " +
+          "time they need have assigned themselves.",
         reports: [
           {
             id: 100,
@@ -201,7 +202,7 @@ const ProjectViewerProvider = ({ children }) => {
         project: "https://serene-dawn-65763.herokuapp.com/",
         github: "https://github.com/MissyM2/shopYourCloset",
         title: "shopYourCloset",
-        style: "lavender",
+        style: "blue",
         tech: [
           {
             name: "HTML5",
@@ -229,10 +230,11 @@ const ProjectViewerProvider = ({ children }) => {
           },
         ],
         overview:
-          "With shopYourCloset a user can get and maintain control over his or her wardrobe.",
+          "shopYourCloset allows a user to analyze their wardrobe and get ideas about some next steps.",
         content:
-          "You add wardrobe items to the app.  The app will, then, analyze your wardrobe and " +
-          "give recommendations and options for improvement.",
+          "After a user adds their wardrobe items to their personal closet, the app compares their wardrobe to " +
+          "an ideal wardrobe and issues recommendations.  Inside the app, a user can add an item to a donation" +
+          " closet or share it with others in their share group.",
         reports: [],
         artifacts: [
           {
@@ -273,9 +275,11 @@ const ProjectViewerProvider = ({ children }) => {
           },
         ],
         overview:
-          "getTheBook will help bookclubs choose the right book for the group.",
+          "getTheBook pulls together different sources of research to help members select a good book.",
         content:
-          "You enter a title, author or subject a book and you are returned reviews, videos, author information and suggestions.",
+          "A user can enter a title, author or subject a book and review a list of results to choose " +
+          " from.  Once a user drills down and selects a book, they are presented three types of information " +
+          "to use to make their decision, reviews, videos, author information.",
         reports: [],
         artifacts: [
           {
@@ -290,7 +294,7 @@ const ProjectViewerProvider = ({ children }) => {
       },
       {
         id: 4,
-        image: require("../images/do__mockup-icon-2.png"),
+        image: require("../images/do__image.png"),
         imageAlt: "Dinner's On",
         type: "Design",
         title: "Dinner's On",
@@ -306,11 +310,11 @@ const ProjectViewerProvider = ({ children }) => {
           },
         ],
         overview:
-          "Dinner's On delivers nutritious dinners to busy families with limited time for cooking.",
+          "Dinner's On delivers family-style meals to help busy households who don't have time to cook.",
         content:
           "In this online ordering system, a user navigates through a progressive process, choosing items " +
-          "from several meal categories.  The user, ultimately, inputs details for the delivery and payment.  " +
-          "This application also incorporates the ability to become a recurring user.",
+          "from several meal categories.  The user, then, inputs details for the delivery and payment.  " +
+          "This application allows for a recurring user.",
         reports: [
           {
             id: 123,

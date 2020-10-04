@@ -7,7 +7,9 @@
 
     &__image-container {
         display:flex;
+        flex-direction:column;
         align-content:center;
+        margin-bottom: 2em;
     }
 
     &__color-block {
@@ -25,21 +27,18 @@
         margin-right: -.5em;
         height: 8em;
         width: 8em;
+        margin-bottom: 2em;
         border-radius:5px;
         filter: grayscale(100%);
     }
 
+    &__resume-btn {
+        display:flex;
+        justify-content:center;
+    }
+
     &__content {
         margin-top: 3em;
-    }
-}
-
-p {
-    font-size: .8em;
-    margin-bottom: 1em;
-
-    &:first-child {
-        font-weight: 700;
     }
 }
 

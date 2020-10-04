@@ -23,18 +23,25 @@
   }
 }
 
+.clear {
+  clear:both;
+}
+
 .btn {
   width: auto;
   font-size: 1em;
   padding:5px 10px;
   min-width: 100px;
+
+  &__border-radius {
   border-radius: 2px;
+  }
 
   &__container {
     display:flex;
     justify-content:center;
     width: 100%;
-    margin-bottom:8px;
+    margin-bottom:1em;
   }
 
   &__dark {

@@ -3,10 +3,30 @@
   border-radius: 5px;
   display:inline-block;
   padding: 1em;
+  /* transition-property: opacity; */
+  transition-property: opacity, background-color;
+  transition-duration: 1d;
+  transition-timing-function: linear;
+  
+
+  
 
   &__image-container {
     text-align:center;
     padding:10px;
+  }
+
+  &__links-action {
+    /* transition: all 2s, height 2s; */
+    /* -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear; */
+
+    /* &:hover {
+      transform: scale(2.0);
+    } */
+
+
   }
 
   &__image{
@@ -46,18 +66,38 @@
 
 .green {
   background-color: var(--highlight-12);
+
+  &:hover {
+    background-color:var(--highlight-12-dark);
+  /*  opacity: .5; */
+  } 
 }
 
 .yellow {
   background-color: var(--highlight-11);
+
+  &:hover {
+    background-color:var(--highlight-11-dark);
+  /*  opacity: .5; */
+  } 
 }
 
 .peach {
   background-color: var(--highlight-14);
+
+  &:hover {
+    background-color:var(--highlight-14-dark);
+  /*  opacity: .5; */
+  } 
 }
 
 .blue {
   background-color: var(--highlight-10);
+
+  &:hover {
+    background-color:var(--highlight-10-dark);
+  /*  opacity: .5; */
+  } 
 }
 
 .macbook {

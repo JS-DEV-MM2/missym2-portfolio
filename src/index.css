@@ -20,10 +20,14 @@
     --light-accent: #AF473C;
     --dark-accent: #AD6C71;
     --highlight-10: #DDEEFE;
+    --highlight-10-dark: #cde6fe;
     --highlight-11: #F9F7C7;
+    --highlight-11-dark: #f7f5b8;
     --highlight-12: #D9F6F1;
+    --highlight-12-dark: #cbf3ec;
     --highlight-13: #E6EDFF;
-    --highlight-14: #FFE9E2;
+    --highlight-14: #FFE9E2; 
+    --highlight-14-dark: #ffdcd1;
     --highlight-15: #E6DBEB;
 
     
@@ -69,10 +73,10 @@ a {
   border: 0;
   font: inherit;
   vertical-align: baseline;
-  transition: all .2s linear;
-  -moz-transition: all .2s linear;
+  /* transition: all 2s linear; */
+  /* -moz-transition: all .2s linear;
   -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
+  -o-transition: all .2s linear; */
   text-decoration: none;
   color: var(--body-html-default-text);
 
@@ -81,6 +85,7 @@ a {
 
 a:hover {
   color: var(--text-highlight);
+ /*  width: 250px; */
 }
 
 p {

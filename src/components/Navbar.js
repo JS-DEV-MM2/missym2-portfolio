@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 /* import MenuNav from './MenuNav'; */
-import AppImage from '../images/icon2.png';
+import oneFlower from '../images/one-flower.svg';
+import twoFlowers from "../images/two-flowers.svg";
 
 import "../styles/NavBar.scss";
 
@@ -34,19 +35,30 @@ const NavBar = () => {
   }
 
     return (
-      <div className="nav nav__container">
+      <div className={`nav nav__container ${isActive ? "open-nav" : ""}`}>
         <Link to="/" className="nav__image-container">
-          <img src={AppImage} className="nav__image" alt="home page" />
+          <img src={oneFlower} className="nav__image" alt="home page" />
         </Link>
         {isWideWidth ? (
-          <div>
-            <div onClick={onClick} className="menu__hamburger-container">
-              <div className="menu__hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
+          <div onClick={onClick} className="nav-toggle">
+            <div className="open-trigger">
+              <span className="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span className="text">Menu</span>
             </div>
+            <span className="close-trigger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27.07"
+                height="27.07"
+                viewBox="0 0 27.07 27.07"
+              >
+                <polygon points="27.07 1.27 25.8 0 13.54 12.26 1.27 0 0 1.27 12.26 13.54 0 25.8 1.27 27.07 13.54 14.81 25.8 27.07 27.07 25.8 14.81 13.54 27.07 1.27"></polygon>
+              </svg>
+            </span>
           </div>
         ) : (
           <div>
@@ -74,34 +86,39 @@ const NavBar = () => {
             </nav>
           </div>
         )}
-        <nav
-          ref={dropdownRef}
-          className={`menu__overlay ${isActive ? "active" : "inactive"} ${
-            isWideWidth ? "notwidewidth" : "widewidth"
-          }`}
-        >
-          <ul className="menu__overlay-container">
-            <li className="menu__overlay-item">
-              <Link to="/" onClick={onClick} className="menu-item">
-                Home
-              </Link>
-            </li>
-            <li className="menu__overlay-item">
-              <Link to="/about" onClick={onClick} className="menu__item">
-                About
-              </Link>
-            </li>
-            <li className="menu__overlay-item">
-              <a
-                href="mailto:missymaloney1@gmail.com"
-                onClick={onClick}
-                className="menu__item"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <section className="menu__overlay">
+          <nav
+            ref={dropdownRef}
+           /*  className={`menu__overlay--nav ${isActive ? "active" : "inactive"} ${
+              isWideWidth ? "notwidewidth" : "widewidth" */
+            className="menu__overlay--nav"
+          >
+            {/* <div className="menu__overlay--nav"> */}
+              <div>
+                <Link to="/" onClick={onClick} className="menu-item">
+                  Home
+                </Link>
+              </div>
+              <div>
+                <Link to="/about" onClick={onClick} className="menu__item">
+                  About
+                </Link>
+              </div>
+              <div>
+                <a
+                  href="mailto:missymaloney1@gmail.com"
+                  onClick={onClick}
+                  className="menu__item"
+                >
+                  Contact
+                </a>
+              </div>
+              <div>
+                <img src={twoFlowers} className="flower" alt="flower" />
+              </div>
+           {/*  </div> */}
+          </nav>
+        </section>
       </div>
     );
 }
